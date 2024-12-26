@@ -1,0 +1,69 @@
+Delete this controller from vs code project.
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+// class HomeController extends Controller
+// {
+//     public function index(){
+//         return "Hello Dear!!!";
+//     }
+// }
+
+// home page showing
+// class HomeController extends Controller
+// {
+//     public function index(){
+//         return view('welcome.blade.php');
+//     }
+// }
+
+//home page ar main name  welcome
+//.blade.php >>>extension (no need extension)
+
+class HomeController extends Controller
+{
+    public function index(){
+        return view('welcome');
+    }
+
+    // public function contact (){
+    //     return "Contact Us";
+    // }
+
+    // showing contact us view file
+
+    public function contact (){
+        return view('contact');
+    }
+}
+
+================
+web.php
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+// http request (url) =>>> 
+Route::get('/',[HomeController::class,'index']);
+Route::get('/contact-us',[HomeController::class,'contact']);
+
