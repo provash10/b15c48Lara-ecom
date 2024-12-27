@@ -156,5 +156,36 @@ resources >>. Views >> index.blade.php
 
 Route Change hole Command this git bese>>>> php artisan optimize
 --------------------------------------------------------
+====================
+Class-51 (Laravel-4)
+---------------------
+Mastering>>>>
+Without http link all href link {{asset()}} Laravel structure korte hobe.
+Head Tag
+>>>> 
+{{-- <!-- Pavicon ICon --> {{asset()}} --}}
+	{{-- <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon"> --}}
+	<link rel="shortcut icon" href="{{asset('/assets/images/Provash logo.png')}}" type="image/x-icon">
+	
+Check ::: Ctrl + U >>> click the link >>> ok
+If not show >>> showing not found >>>. Ok
+--------------------
+Body Tag
+Without http link all href link {{asset()}} Laravel structure korte hobe.
+Ok
+Check ::: Ctrl + U >>> click the link >>> ok
+-----------------------------------------------
+Common link like Header and Footer keep in one file and use it auto for all pages.
+
+Go >>> resources >>> views >>> create folder >> includes folder >>>create css file>>> style.blade.php >>>Keep all  the style css file in it.
+Go >>> resources >>> views >>> create folder >> includes folder >>>create css file>>> script.blade.php >>>Keep all  the style css file in it.                                                        
+
+Head tag >>> For css
+connetection with inclueds file >>> head tag >>> @include('includes.style') 
+Body tag >>> For js css
+connetection with inclueds file >>> head tag >>> @include('includes.script') 
+
+----------------------------------------------------------------------------
+
 
 

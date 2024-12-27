@@ -4,24 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Provash E-commerce Website</title>
-	<!-- Pavicon ICon -->
-	<link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
-	<!-- Boostrap-5 CDN -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<!-- Fontawesome Link -->
-	<link rel="stylesheet" type="text/css" href="./assets/fonts/fontawesome/css/all.css">
-	<!-- Google Font Link -->
-	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	<!-- Animate Css -->
-	<link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
-	<!-- Slick Slider CDN -->
-	<link rel="stylesheet" type="text/css" href="./assets/plugins/slick-slider/slick.min.css">
-	<!-- Owl carosal -->
-	<link rel="stylesheet" type="text/css" href="./assets/plugins/owl-carousel/owl.carousel.min.css">
-
-	<!-- Main CSS Link -->
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+	@include('includes.style') 
 
 </head>
 <body>
@@ -29,7 +12,8 @@
 		<div class="container">
 			<div class="header-top-wrapper">
 				<a href="index.html" class="brand-logo-outer">
-					<img src="./assets/images/logo.png" alt="Logo">
+					{{-- <img src="./assets/images/logo.png" alt="Logo"> --}}
+					<img src="./assets/images/Provash logo.png" alt="Logo">
 				</a>
 				<div class="search-form-outer">
 					<form action="" method="GET" class="form-group search-form">
@@ -787,22 +771,7 @@
 		</div>
 	</footer>
 
+	@include('includes.script') 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<!-- Boostarap CDN -->
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-	<!-- Slick Slider CDN -->
-	<script src="./assets/plugins/slick-slider/slick.min.js"></script>
-	<!-- owl carosal js -->
-	<script src="./assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-	<!-- Wow js -->
-	<script src="./assets/js/wow.min.js"></script>
-	<!-- Main JS -->
-	<script src="./assets/js/main.js"></script>
-	
-	<script type="text/javascript">
-		new WOW().init();
-	</script>
 </body>
 </html>
