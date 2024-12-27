@@ -186,6 +186,9 @@ Body tag >>> For js css
 connetection with inclueds file >>> head tag >>> @include('includes.script') 
 
 ----------------------------------------------------------------------------
+Common link like Header and Footer keep in one file and use it auto for all pages.
 
-
+###Header and Footer Common 
+Go >>> resources >>> views >>> create folder >> includes folder >>>create header file>
+connetection with inclueds file >>> header >>> @include('includes.style')
 
