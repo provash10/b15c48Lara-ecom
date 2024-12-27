@@ -2,8 +2,8 @@
     <div class="container">
         <div class="header-top-wrapper">
             <a href="index.html" class="brand-logo-outer">
-                {{-- <img src="./assets/images/logo.png" alt="Logo"> --}}
-                <img src="./assets/images/Provash logo.png" alt="Logo">
+                {{-- <img src="{{asset('/assets/images/logo.png')}}" alt="Logo"> --}}
+                <img src="{{asset('/assets/images/Provash logo.png')}}" alt="Logo">
             </a>
             <div class="search-form-outer">
                 <form action="" method="GET" class="form-group search-form">
@@ -27,7 +27,7 @@
                         <div class="cart-items-outer">
                             <div class="cart-item-outer">
                                 <a href="#" class="cart-product-image">
-                                    <img src="./assets/images/product.png" alt="product">
+                                    <img src="{{asset('/assets/images/product.png')}}" alt="product">
                                 </a>
                                 <div class="cart-product-name-price">
                                     <a href="#" class="product-name">
@@ -73,7 +73,7 @@
                             <ul class="header__category-list">
                                 <li class="header__category-list-item item-has-submenu">
                                     <a href="category-product.html" class="header__category-list-item-link">
-                                        <img src="./assets/images/product.png" alt="category">
+                                        <img src="{{asset('/assets/images/product.png')}}" alt="category">
                                         Test Category
                                     </a>
                                     <ul class="header__nav-item-category-submenu">
@@ -99,7 +99,12 @@
                             </a>
                         </li>
                         <li class="dynamic-page-list-item">
-                            <a href="shop.html" class="dynamic-page-list-item-link">
+                            {{-- <a href="shop.html" class="dynamic-page-list-item-link">
+                                Shop
+                            </a> --}}
+
+                            {{-- for laravel --}}
+                            <a href="{{url('/shop')}}" class="dynamic-page-list-item-link">
                                 Shop
                             </a>
                         </li>
