@@ -1,7 +1,8 @@
 <header class="header-section">
     <div class="container">
         <div class="header-top-wrapper">
-            <a href="index.html" class="brand-logo-outer">
+            {{-- <a href="index.html" class="brand-logo-outer"> --}}
+                <a href="{{url('/')}}" class="brand-logo-outer">
                 {{-- <img src="{{asset('/assets/images/logo.png')}}" alt="Logo"> --}}
                 <img src="{{asset('/assets/images/Provash logo.png')}}" alt="Logo">
             </a>
@@ -94,13 +95,18 @@
                 <div class="header__dynamic-page-wrapper">
                     <ul class="dynamic-page-list">
                         <li class="dynamic-page-list-item">
-                            <a href="index.html" class="dynamic-page-list-item-link">
+                            {{-- <a href="index.html" class="dynamic-page-list-item-link">
+                                Home
+                            </a> --}}
+
+                            {{-- For Laravel  --}}
+                            <a href="{{url('/')}}" class="dynamic-page-list-item-link">
                                 Home
                             </a>
                         </li>
                         <li class="dynamic-page-list-item">
                             {{-- <a href="shop.html" class="dynamic-page-list-item-link">
-                                Shop
+                                Shop ht
                             </a> --}}
 
                             {{-- for laravel --}}

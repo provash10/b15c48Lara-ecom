@@ -194,162 +194,105 @@ connetection with inclueds file >>> header >>> @include('includes.header')
 
 Go >>> resources >>> views >>> create folder >> includes folder >>>create footer file>
 connetection with inclueds file >>> footer >>> @include('includes.footer')
+---------------------
+Note : All image link gulo k {{asset()}} Laravel structure korte hobe.
+Body Tag a main section a img gulor link change korte hobe
+img link gulo k {{asset()}} Laravel structure korte hobe.
+
+Without http link all href link {{asset()}} Laravel structure korte hobe.
+
+Like as {{-- <!-- Pavicon ICon --> {{asset()}} --}}
+	{{-- <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon"> --}}
+	<link rel="shortcut icon" href="{{asset('/assets/images/Provash logo.png')}}" type="image/x-icon">
+	
+Note : All image link gulo k {{asset()}} Laravel structure korte hobe.
+Like as >>> Header and Footer 
+................................
+All Page a Header,Footer and Link gulo commmon
+Common Template all page a lagbe.
+ Tai akey master file or master layout bole 
+Akon Resources >>> views>>> master.blade.php >>> keep common template
+
+akon master.blade.php k index.blade.php file nia aste hobe .....
+ar jonon >>> index.blade.php >>> @include('master')
 
 
+index.blade.php >>> 
+@include('master') >>> Own asset
+
+@extends('master') >>> lend others asset
+
+index.blade.php >>> 
+@extends('master')
+@section('content')
+Main Section Code >>> Own Asset (body)
+@endsection
 
 
+master.blade.php
+ header
+@yield('content')
+
+footer
+==========================
+Main words Section remove from index.blade.php
+
+-----------------------
+Now New Page >>> Shop Page
+Create web.php >>> url >>> 
+Route::get('/shop',[FrontendController::class,'shop'])
+
+includes >>>header
+ <li class="dynamic-page-list-item">
+                            {{-- <a href="shop.html" class="dynamic-page-list-item-link">
+                                Shop
+                            </a> --}}
+
+                            {{-- for laravel --}}
+                            <a href="{{url('/shop')}}" class="dynamic-page-list-item-link">
+                                Shop
+                            </a>
 
 
+shop function create korte hobe.........
+FrontendController theke >>>> 
 
 
-<footer class="footer-section">
-		<div class="footer__top-wrapper">
-			<div class="container">
-				<a href="index.html" class="footer__brand-logo-outer">
-					<img src="./assets/images/logo.png" class="footer__brand-logo-inner" />
-				</a>
-			</div>
-		</div>    
-		<div class="footer__main-wrapper">
-			<div class="container">        
-				<div class="row">
-					<div class="col-lg-3 col-md-6">
-						<div class="footer__item-wrap">
-							<h4 class="footer__item-title">
-								Policy
-							</h4>
-							<ul class="footer__list">
-								<li class="footer__list-item">
-									<a href="privacy-policy.html" class="footer__list-item-link">
-										Privacy Policy
-									</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">
-										Terms & Conditions
-									</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">
-										Refund Policy
-									</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">
-										Payment Policy
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="footer__item-wrap">
-							<h4 class="footer__item-title">
-							   Contacts
-							</h4>
-							<ul class="footer__contact-info-list">
-								<li class="footer__contact-info-list-item">
-									<p class="footer__contact-info-list-item-label">
-										Address:                                   
-									</p>
-									<p class="footer__contact-info-list-item-value">
-										Uttara, Dhaka                                 
-									</p>
-								</li>
-								<li class="footer__contact-info-list-item">
-									<p class="footer__contact-info-list-item-label">
-										Phone:                                   
-									</p>
-									<a href="tel:0123456857" class="footer__contact-info-list-item-value">
-										0123456857
-									</a>
-								</li>
-								<li class="footer__contact-info-list-item">
-									<p class="footer__contact-info-list-item-label">
-										Email:                                   
-									</p>
-									<a href="mailto:info@gmail.com" class="footer__contact-info-list-item-value">
-										info@gmail.com
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>                
-					<div class="col-lg-3 col-md-6">
-						<div class="footer__item-wrap">
-							<h4 class="footer__item-title">
-								Others
-							</h4>
-							<ul class="footer__list">
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">
-										About Us
-									</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">
-										Contact Us
-									</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">
-										Blog
-									</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">
-										Careers
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="footer__item-wrap">
-							<h4 class="footer__item-title">
-								Follow Us
-							</h4>
-							<ul class="footer__social-list">
-								<li class="footer__social-list-item">
-									<a href="#" class="footer__social-list-item-lisk">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-								</li>
-								<li class="footer__social-list-item">
-									<a href="#" class="footer__social-list-item-lisk">
-										<i class="fab fa-twitter"></i>
-									</a>
-								</li>
-								<li class="footer__social-list-item">
-									<a href="#" class="footer__social-list-item-lisk">
-										<i class="fab fa-instagram"></i>
-									</a>
-								</li>
-								<li class="footer__social-list-item">
-									<a href="#" class="footer__social-list-item-lisk">
-										<i class="fab fa-youtube"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer__bottom-wrapper">
-			<div class="container">
-				<p class="footer__bottom-text">
-					© 2024, All rights reserved
-					<strong class="text-brand">Nitto Mart</strong>
-				</p>
-			</div>
-		</div>
-	</footer>
+Shop Page >>> Header footer korar jonno master.blade.php file copy paste korte hobe
+shop.blade.php >>> @extends('master')
 
+Now System Middle or main content >>> Find old file >>> shop.html >>> copy and paste ok
 
+shop.blade.php >>>
+@extends('master')
 
+shop file main part/section >>>> <section> </section>
+@section('content')
+
+@endsection
+
+---------------------
+
+index.html >>> Home Page not found >>>
+ Use Base url ('/')
+Home Page ar url hosse just a slash(/)
+header.php >>>anchor tag/Link>>> logo (image click) 
+>>> {{-- <a href="index.html" class="brand-logo-outer"> --}}
+                <a href="{{url('/')}}" class="brand-logo-outer">
+
+Again,Home Page /Home button >>>>
+
+{{-- <a href="index.html" class="dynamic-page-list-item-link">
+                                Home
+                            </a> --}}
+
+                            {{-- For Laravel  --}}
+                            <a href="{{url('/')}}" class="dynamic-page-list-item-link">
+                                Home
+                            </a>
 
 
 
 ;;;;;;;;;;;;;;;;;;;;;;
+====================
 
