@@ -13,4 +13,8 @@ class FrontendController extends Controller
     public function shop(){
         return view('shop');
     }
+
+    public function returnProcess(){
+        return view('return-process');
+    }
 }

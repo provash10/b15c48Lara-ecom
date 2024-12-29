@@ -295,4 +295,15 @@ Again,Home Page /Home button >>>>
 
 ;;;;;;;;;;;;;;;;;;;;;;
 ====================
+Class-52 (Laravel-5)…
+--------------------
+Again Mastering >>>
+1. create url from web.php and cash clear php artisan optimize and clear.
+Route::get('/return-process',[FrontendController::class,'returnProcess']);
+url return-process >>> return process Page a setup korte hobe
+class,'returnProcess' >>> FrontendController Page a setup korte hobe
+FrontendController Page >>  a return-process function likte hobe 
+and views >>> return-process.blade.php file create korte hobe
+
+2. 
 

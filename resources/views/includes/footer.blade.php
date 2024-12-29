@@ -49,7 +49,7 @@
                                     Address:                                   
                                 </p>
                                 <p class="footer__contact-info-list-item-value">
-                                    Uttara, Dhaka                                 
+                                    Dhaka,Bangladesh.                                 
                                 </p>
                             </li>
                             <li class="footer__contact-info-list-item">
@@ -57,7 +57,7 @@
                                     Phone:                                   
                                 </p>
                                 <a href="tel:0123456857" class="footer__contact-info-list-item-value">
-                                    0123456857
+                                    01710490345
                                 </a>
                             </li>
                             <li class="footer__contact-info-list-item">
@@ -65,7 +65,7 @@
                                     Email:                                   
                                 </p>
                                 <a href="mailto:info@gmail.com" class="footer__contact-info-list-item-value">
-                                    info@gmail.com
+                                    provash20cb@gmail.com
                                 </a>
                             </li>
                         </ul>
@@ -107,7 +107,7 @@
                         </h4>
                         <ul class="footer__social-list">
                             <li class="footer__social-list-item">
-                                <a href="#" class="footer__social-list-item-lisk">
+                                <a href="{{url('https://www.facebook.com/provash.chandra.barman')}}" class="footer__social-list-item-lisk">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
@@ -135,8 +135,8 @@
     <div class="footer__bottom-wrapper">
         <div class="container">
             <p class="footer__bottom-text">
-                © 2024, All rights reserved
-                <strong class="text-brand">Nitto Mart</strong>
+                © 2024, All rights reserved!!!
+                <strong class="text-brand">Priya-Prity</strong>
             </p>
         </div>
     </div>

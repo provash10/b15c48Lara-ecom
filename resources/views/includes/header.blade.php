@@ -116,7 +116,12 @@
                         </li>
                         </li>
                         <li class="dynamic-page-list-item">
-                            <a href="return-process.html" class="dynamic-page-list-item-link">
+                            {{-- <a href="return-process.html" class="dynamic-page-list-item-link">
+                                Return Process
+                            </a> --}}
+
+                            {{-- For Laravel from web.php  --}}
+                            <a href="{{url('return-process')}}" class="dynamic-page-list-item-link">
                                 Return Process
                             </a>
                         </li>
