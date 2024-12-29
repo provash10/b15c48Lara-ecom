@@ -303,7 +303,38 @@ Route::get('/return-process',[FrontendController::class,'returnProcess']);
 url return-process >>> return process Page a setup korte hobe
 class,'returnProcess' >>> FrontendController Page a setup korte hobe
 FrontendController Page >>  a return-process function likte hobe 
-and views >>> return-process.blade.php file create korte hobe
+and resources>>>views >>> return-process.blade.php file create korte hobe and check it.
 
-2. 
+return-process.blade.php >>>Mastering korte hobe common template theke. @extends('master')
+
+@extends('master')
+@section('content')
+copy the return-process code file and paste (<section></section>)
+@endsection
+ Mastering korte hobe >>>first>> Header and Footer nia aste hobe.
+ Mastering korte hobe >>>2nd main pages (return process page ante hobe>> 
+---------------------------------------------------------------------------
+2. web.php >>>Route>>> url >> category-products   class>>>categoryProducts
+url >> category-products  >> setup header.blade.php   
+class setup >>> FrontController  
+
+3. view-cart and checkout page 
+
+4. Product Details  Page
+
+
+Policy Pages
+Privacy Policy
+Terms & Conditions
+Refund Policy
+Payment Policy
+
+
+About Us
+
+View All Ok
+
+
+
+Contact Us 
 
