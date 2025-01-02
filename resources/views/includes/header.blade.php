@@ -2,7 +2,9 @@
     <div class="container">
         <div class="header-top-wrapper">
             {{-- <a href="index.html" class="brand-logo-outer"> --}}
-                <a href="{{url('/')}}" class="brand-logo-outer">
+                {{-- <a href="{{url('/')}}" class="brand-logo-outer"> --}}
+                    {{-- For Name --}}
+                    <a href="{{route('base')}}" class="brand-logo-outer">
                 {{-- <img src="{{asset('/assets/images/logo.png')}}" alt="Logo"> --}}
                 <img src="{{asset('/assets/images/Provash logo.png')}}" alt="Logo">
             </a>
@@ -100,7 +102,9 @@
                             </a> --}}
 
                             {{-- For Laravel  --}}
-                            <a href="{{url('/')}}" class="dynamic-page-list-item-link">
+                            {{-- <a href="{{url('/')}}" class="dynamic-page-list-item-link"> --}}
+                                {{-- For Name --}}
+                            <a href="{{route('base')}}" class="dynamic-page-list-item-link">
                                 Home
                             </a>
                         </li>
@@ -110,7 +114,9 @@
                             </a> --}}
 
                             {{-- for laravel --}}
-                            <a href="{{url('/shop')}}" class="dynamic-page-list-item-link">
+                            {{-- <a href="{{url('/shop')}}" class="dynamic-page-list-item-link"> --}}
+                                {{-- For Name --}}
+                                <a href="{{route('shop')}}" class="dynamic-page-list-item-link">
                                 Shop
                             </a>
                         </li>
